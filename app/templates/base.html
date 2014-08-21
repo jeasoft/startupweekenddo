@@ -3,35 +3,56 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{% block title %}app{% endblock title %}</title>
+    <title>Startup Education - Santo Domingo, RD.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-
+    <link href="{% static 'css/app.css' %}" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <!-- This file store project specific CSS -->
-    <link href="{% static 'css/app.css' %}" rel="stylesheet">
-
-    <!-- Use this to quickly test CSS changes in a template,
-        then move to app.css -->
-    {% block extra_css %}{% endblock extra_css %}
   </head>
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <header id="cover">
+          <div class="container-fluid box">
+
+            <div class="row">
+              <div class="col-sm-12">
+                  <img src="{% static 'img/logo1.png' %}">
+            </div>
+            
+            <div class="row">
+              <div class="col-sm-12 col-xs-12">
+                <h1 id="big-tagline">Transforma la educación en 54 horas</h1>
+                <p id="small-tagline">17, 18 y 19 de Octubre. Biblioteca Nacional.</p>
+              </div>
+            </div>
+              
+            <div class="row">
+              <div class="col-sm-3 col-xs-12">
+                <p>
+                  <a href="accounts/signup/" class="btn btn-xlarge btn-blue">Registrate</a>
+                </p>
+                </div>
+               <div class="col-sm-3 col-xs-12">
+                <p>
+                  <a class="btn btn-xlarge btn-learn" id="scroll">Mas informacion</a>
+                </p>
+              </div>
+            </div>
+        </div>
+      </header>
+
+    <div class="navbar navbar-default" id="home-navbar">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -39,27 +60,221 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">app</a>
+          <a class="navbar-brand" href="#"><img src="{% static 'img/logo1.png' %}"></a>
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <div class="collapse navbar-collapse" role="menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#about">Acerca</a></li>
+            <li><a href="#about">Programa</a></li>
+            <li><a href="#about">Colaboradores</a></li>
+            <li><a href="#about">Patrocinadores</a></li>
+            <li><a href="#contact">Contacto</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
-    <div class="container">
+    <div id="acerca">
 
-      <h1>{% block page_title %}Example Base Template{% endblock page_title %}</h1>
+      <div class="container-fluid box">
 
-      {% block content %}
-        <p>Use this document as a way to quick start any new project.</p>
-      {% endblock content %}
+        <div class="text-center col-sm-8 col-sm-offset-2">
+          
+            <h1>Transformemos la educación en 54 horas</h1>
+            <p>Startup Weekend EDU es un evento donde reunimos a emprendedores, educadores, programadores y todas las personas pertinentes para hacer una diferencia en la Educación de nuestro país. Si quieres hacer una diferencia no dejes de acompañarnos a todos en este evento.
+            </p>
 
+            <div class="video" >
+            <iframe src="//player.vimeo.com/video/53366381?title=0&amp;byline=0&amp;portrait=0&amp;color=ff8a00" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
     </div> <!-- /container -->
+
+    <div class="programa">
+
+      <div class="container-fluid box">
+
+      <h1 class="text-center">Programa</h1>
+          
+        <div class="col-sm-4">
+          <table class="table table-hover">
+          <h3>Viernes 17 de Octubre</h3>
+            <tr>
+              <td>6:00 pm</td>
+              <td>Abre el registro de los participantes</td> 
+            </tr>
+            <tr>
+              <td>7:00 pm</td>
+              <td>Cena & networking</td> 
+            </tr>
+            <tr>
+              <td>7:20 pm</td>
+              <td>Bienvenida & Presentadores</td> 
+            </tr>
+            <tr>
+              <td>7:30 pm</td>
+              <td>Pitches</td> 
+            </tr>
+            <tr>
+              <td>9:00 pm</td>
+              <td>Votación</td> 
+            </tr>
+            <tr>
+              <td>9:15 pm</td>
+              <td>Formación de Equipos</td> 
+            </tr>
+            <tr>
+              <td>10:00 pm</td>
+              <td>Inicio del Trabajo</td> 
+            </tr>
+          </table>
+        </div>
+
+        <div class="col-sm-4">
+          <table class="table table-hover">
+          <h3>Sabado 18 de Octubre</h3>
+            <tr>
+              <td>9:00 am</td>
+              <td>Desayuno</td> 
+            </tr>
+            <tr>
+              <td>9:30 am</td>
+              <td>Inicio del Trabajo</td> 
+            </tr>
+            <tr>
+              <td>12:00 pm</td>
+              <td>Almuerzo</td> 
+            </tr>
+            <tr>
+              <td>1:00 pm</td>
+              <td>Check-In</td> 
+            </tr>
+            <tr>
+              <td>2:00 pm</td>
+              <td>Reunión con los Coaches</td> 
+            </tr>
+            <tr>
+              <td>6:30 pm</td>
+              <td>Cena</td> 
+            </tr>
+            <tr>
+              <td>7:30 pm</td>
+              <td>Check-In</td> 
+            </tr>
+            <tr>
+              <td>10:00 pm</td>
+              <td>Cierre de la Jornada de Trabajo</td> 
+            </tr>
+          </table>
+        </div>
+
+        <div class="col-sm-4">
+          <table class="table table-hover">
+          <h3>Domingo 19 de Octubre</h3>
+            <tr>
+              <td>9:00 am</td>
+              <td>Desayuno</td> 
+            </tr>
+            <tr>
+              <td>10:00 am</td>
+              <td>Check-In</td> 
+            </tr>
+            <tr>
+              <td>12:00 pm</td>
+              <td>Almuerzo</td> 
+            </tr>
+            <tr>
+              <td>12:30 pm</td>
+              <td>Reunión con los Coaches</td> 
+            </tr>
+            <tr>
+              <td>3:00 pm</td>
+              <td>Preparación de la Presentación</td> 
+            </tr>
+            <tr>
+              <td>4:00 pm</td>
+              <td>Cena</td> 
+            </tr>
+            <tr>
+              <td>5:00 pm</td>
+              <td>Presentaciones Finales</td> 
+            </tr>
+            <tr>
+              <td>7:30 pm</td>
+              <td>Evaluación y Premiación</td> 
+            </tr>
+            <tr>
+              <td>8:30 pm</td>
+              <td>Cierre del Evento</td> 
+            </tr>
+            <tr>
+              <td>9:00 pm</td>
+              <td>After Party</td> 
+            </tr>
+          </table>
+        </div>
+
+      </div>
+    </div> <!-- /container -->
+
+    <div class="organizadores">
+      <div class="container-fluid box">
+        <div class="col-sm-12">
+          <div class="text-center">
+            <h1>Organizadores</h1>
+            <p>El Startup Education en Santo Domingo esta liderado por lideres voluntarios de la comunidad.</p>
+
+            <div class="organizer">
+              <img src="{% static 'img/organizers/leonardo.png' %}" class="img-circle">
+              <h4>Leonardo Jimenez</h4>
+            </div>
+
+            <div class="organizer">
+              <img src="{% static 'img/organizers/patricia.png' %}" class="img-circle">
+              <h4>Patricia Acosta</h4>
+            </div>
+
+            <div class="organizer">
+              <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
+              <h4>Katihusca Rodriguez</h4>
+            </div>
+
+            <div class="organizer">
+              <img src="{% static 'img/organizers/alan.png' %}" class="img-circle">
+              <h4>Alan Fernandez</h4>
+            </div>
+
+            <div class="organizer">
+              <img src="{% static 'img/organizers/vivian.png' %}" class="img-circle">
+              <h4>Vivian Guillen</h4>
+            </div>
+
+            <div class="organizer">
+              <img src="{% static 'img/organizers/sovieski.png' %}" class="img-circle">
+              <h4>Sovieski Naut</h4>
+            </div>
+
+            <div class="organizer">
+              <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
+              <h4>Michelle Guzman</h4>
+            </div>
+
+            <div class="organizer">
+              <img src="{% static 'img/organizers/jorge.png' %}" class="img-circle">
+              <h4>Jorge Vargas</h4>
+            </div>
+
+            <div class="organizer">
+              <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
+              <h4>Luz Gonzalez</h4>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Le javascript
     ================================================== -->

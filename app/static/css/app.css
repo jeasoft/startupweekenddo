@@ -1,1 +1,219 @@
-/*! project specific CSS goes here. */
+
+/*Body*/
+
+.box {
+  padding-left: 4%;
+  max-width: 1300px;
+  padding-right: 4%;
+  height: 100%;
+}
+
+/*body {
+	background-color: #F7F8F8;
+}*/
+
+p {
+  font-size: 1.2em;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+/*Fonts*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+}
+
+p, a {
+  font-family: 'Open Sans', sans-serif; 
+}
+
+/*Navigation*/
+
+
+.nav > li > a {
+  color: #414142;
+}
+
+.navbar-default {
+	background-color: #fff;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: underline;
+  background-color: #ffffff;
+}
+
+.navbar-brand {
+	padding: 5px;
+	height: 60px
+}
+
+.navbar-brand img {
+	height: 50px;
+}
+
+/*Cover Section*/
+
+#cover {
+	padding-top: 1%;
+	background:url('../img/laptop.jpg') no-repeat;
+	background-size: cover;
+}
+
+@media (max-width: 500px) { 
+  #cover {
+    height: 500px;
+  }
+}
+
+#cover img {
+	padding-top: 20px;
+}
+
+
+#big-tagline {
+  font-size: 2em;
+  margin-top: 12%;
+  color: #333;
+  font-weight: bold;
+
+}
+
+@media (min-width: 500px) { 
+
+  #big-tagline {
+    font-size: 2.8em;
+    margin-top: 14%;
+  }
+}
+
+#small-tagline {
+  font-size: 1em;
+}
+
+@media (min-width: 500px) { 
+
+  #small-tagline{
+    font-size: 1.8em;
+  }
+}
+
+#trial-text {
+  padding-left: 1%;
+  margin-top: -1%;
+  padding-bottom: 4%;
+  font-size: 0.6em;
+}
+
+@media (min-width: 500px) { 
+
+  #trial-text {
+  font-size: 0.8em;
+  margin: -1% 0% 0% 1%;
+  }
+}
+
+.btn-xlarge {
+  margin: 5px 5px;
+  padding: 15px 50px;
+  font-size: 1.2em;
+  line-height: 1.33;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+    }
+
+@media (min-width: 500px) { 
+
+  .btn-xlarge {
+  margin: 15px 15px;
+  font-size: 1.5em;
+    }
+}
+
+@media (min-width: 750px) {
+  .btn-xlarge {
+  margin: 15px 15px;
+  font-size: 1em;
+    }
+}
+
+@media (min-width: 1200px) {
+  .btn-xlarge {
+  margin: 15px 15px;
+  font-size: 1.5em;
+    }
+
+  .btn-learn {
+    margin-left: -15%;
+  }
+}
+
+.btn-blue { 
+  color: #000; 
+  background-color: #FED208; 
+} 
+ 
+.btn-blue:hover, 
+.btn-blue:focus, 
+.btn-blue:active, 
+.btn-blue.active, 
+.open .dropdown-toggle.btn-blue { 
+  color: #ffffff; 
+  background-color: #0352A1; 
+} 
+
+.btn-learn { 
+  color: #FFFFFF; 
+  background-color: #000000;  
+
+} 
+
+.btn-learn:hover, 
+.btn-learn:focus, 
+.btn-learn:active, 
+.btn-learn.active, 
+.open .dropdown-toggle.btn-learn { 
+  color: #FFFFFF; 
+  background-color: #383737; 
+} 
+
+
+#home-navbar {
+  z-index: 1;
+}
+
+
+/*Home content*/
+
+.acerca {
+	height: 650px;
+}
+
+.acerca h1, 
+.acerca p, 
+.acerca iframe {
+	padding: 5% 2% 2% 2%;
+}
+
+.programa {
+  height: 650px;
+  padding: 5%;
+}
+
+.programa h3 {
+	padding: 5px;
+}
+
+.organizer {
+	padding: 3%;
+	display: inline-block;
+}
+
+.organizer img {
+	height: 150px;
+}
