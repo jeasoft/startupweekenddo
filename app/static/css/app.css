@@ -191,7 +191,7 @@ p, a {
 /*Home content*/
 
 .acerca {
-	height: 650px;
+	height: 100%;
 }
 
 .acerca h1, 
@@ -201,7 +201,7 @@ p, a {
 }
 
 .programa {
-  height: 650px;
+  height: 100%;
   padding: 5%;
 }
 
@@ -216,4 +216,35 @@ p, a {
 
 .organizer img {
 	height: 150px;
+}
+
+.collaborator img, 
+.juez img {
+	height: 200px
+}
+
+.mentores p, 
+.jueces p {
+	margin-top: 3%;
+}
+
+.collaborators .row, 
+.jueces .row {
+	padding: 3%;
+}
+
+/*Footer*/
+
+.footer {
+	background-color: #1C2326;
+	padding: 50px;
+}
+
+.footer p, .footer h1 {
+	color:#fff;
+}
+
+.social-icon {
+	display: inline-block;
+	padding: 3%;
 }
