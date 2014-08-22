@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Collaborators(models.Model):
+    """All the colaboratos goes here without exception"""
 	full_name = models.CharField(max_length=40)
 	mini_bio = models.TextField()
 	image = models.ImageField(upload_to="img")
