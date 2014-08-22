@@ -12,6 +12,9 @@ class Collaborators(models.Model):
 	category = models.CharField(max_length=40)
 
 class Sponsors(models.Model):
+    """This model provides a good base to handle the 
+    event sponsors
+    """
     name = models.CharField(max_length=40)
     logo = models.ImageField(upload_to='img')
     sponsor_type = models.CharField(max_length=40)
