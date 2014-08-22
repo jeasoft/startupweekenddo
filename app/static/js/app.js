@@ -33,9 +33,10 @@ $(document).ready (function () {
 
 	});
 
-	$("#scroll").click(function() {
+	$("#more-button").click(function() {
 	    $('html, body').animate({
 	        scrollTop: $("#home-navbar").offset().top
 	   		}, 1000);
 		});
-})
+
+});

@@ -23,35 +23,25 @@
 
   <body>
 
-    <header id="cover">
-          <div class="container-fluid box">
-
-            <div class="row">
-              <div class="col-sm-12">
-                  <img src="{% static 'img/logo1.png' %}">
+    <div id="cover">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+              <img src="{% static 'img/logo.png' %}">
             </div>
-            
-            <div class="row">
-              <div class="col-sm-12 col-xs-12">
-                <h1 id="big-tagline">Transforma la educación en 54 horas</h1>
-                <p id="small-tagline">17, 18 y 19 de Octubre. Biblioteca Nacional.</p>
-              </div>
+            <div class="col-sm-12 text-center">
+              <h1 id="big-tagline">Transforma la educación en 54 horas</h1>
+              <p id="small-tagline">17, 18 y 19 de Octubre. Biblioteca Nacional.</p>
             </div>
-              
-            <div class="row">
-              <div class="col-sm-3 col-xs-12">
-                <p>
-                  <a href="accounts/signup/" class="btn btn-xlarge btn-blue">Registrate</a>
-                </p>
-                </div>
-               <div class="col-sm-3 col-xs-12">
-                <p>
-                  <a class="btn btn-xlarge btn-learn" id="scroll">Mas informacion</a>
-                </p>
-              </div>
+            <div class="col-sm-12 text-center ">
+              <p>
+                <a href="#" class="btn btn-xlarge btn-yellow">Registrate</a>
+                <a class="btn btn-xlarge btn-learn" id="more-button">Mas informacion</a>
+              </p>
             </div>
-        </div>
-      </header>
+        </div><!-- /cover -->
+      </div><!-- /container -->
+    </div><!-- /row -->
 
     <div class="navbar navbar-default" id="home-navbar">
       <div class="container">
@@ -66,39 +56,50 @@
         <div class="collapse navbar-collapse" role="menu">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Inicio</a></li>
-            <li><a href="#about">Acerca</a></li>
-            <li><a href="#about">Programa</a></li>
-            <li><a href="#about">Colaboradores</a></li>
-            <li><a href="#about">Patrocinadores</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#acerca">Acerca</a></li>
+            <li><a href="#programa">Programa</a></li>
+            <li><a href="#">Colaboradores</a></li>
+            <li><a href="#">Patrocinadores</a></li>
+            <li><button type="button" class="btn btn-yellow navbar-btn" onclick="location.href = '#'";>Registrate</a></button></li>
           </ul>
         </div><!--/.nav-collapse -->
-      </div>
-    </div>
+      </div><!-- /container -->
+    </div><!-- navbar -->
 
-    <div id="acerca">
-
-      <div class="container-fluid box">
-
+  <div id="about">
+    <div class="container">
+      <div class="row">
         <div class="text-center col-sm-8 col-sm-offset-2">
-          
-            <h1>Transformemos la educación en 54 horas</h1>
-            <p>Startup Weekend EDU es un evento donde reunimos a emprendedores, educadores, programadores y todas las personas pertinentes para hacer una diferencia en la Educación de nuestro país. Si quieres hacer una diferencia no dejes de acompañarnos a todos en este evento.
-            </p>
-
-            <div class="video" >
-            <iframe src="//player.vimeo.com/video/53366381?title=0&amp;byline=0&amp;portrait=0&amp;color=ff8a00" width="700" height="298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-          </div>
+          <h1>Transformemos la educación en 54 horas</h1>
+          <p>Startup Weekend EDU es un evento donde reunimos a emprendedores, educadores, programadores y todas las personas pertinentes para hacer una diferencia en la Educación de nuestro país. Si quieres hacer una diferencia no dejes de acompañarnos a todos en este evento.
+          </p>   
         </div>
-    </div> <!-- /container -->
+      </div>
+      <div class="row">
+        <div class="col-sm-4 text-center">
+          <i class="fa fa-microphone fa-5x"></i>
+          <h2>Viernes - Presenta</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <i class="fa fa-cogs fa-5x"></i>
+          <h2>Sabado - Construye</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <i class="fa fa-rocket fa-5x"></i>
+          <h2>Domingo - XXX</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </div>
+    </div><!-- /container -->
+  </div><!-- /acerca -->
 
-    <div class="programa">
 
-      <div class="container-fluid box">
-
-      <h1 class="text-center">Programa</h1>
-          
+  <div id="program">
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center">Programa</h1>
         <div class="col-sm-4">
           <table class="table table-hover">
           <h3>Viernes 17 de Octubre</h3>
@@ -132,7 +133,6 @@
             </tr>
           </table>
         </div>
-
         <div class="col-sm-4">
           <table class="table table-hover">
           <h3>Sabado 18 de Octubre</h3>
@@ -170,7 +170,6 @@
             </tr>
           </table>
         </div>
-
         <div class="col-sm-4">
           <table class="table table-hover">
           <h3>Domingo 19 de Octubre</h3>
@@ -216,134 +215,125 @@
             </tr>
           </table>
         </div>
+      </div><!-- /row --> 
+    </div><!-- container -->
+  </div> <!-- /programa -->
 
-      </div>
-    </div> <!-- /container -->
-
-    <div class="collaborators">
-      <div class="container-fluid box">
-          <div class="text-center">
-            <h1>Colaboradores</h1>
-
-            <div class="mentores">
-            <h2>Mentores</h2>
-
-            <div class="row">
-              <div class="collaborator col-sm-4">
-                <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
-                <h4>Some Guy</h4>
-              </div>
-              <div class="col-sm-8">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              </div>
+  <div id="collaborators">
+    <div class="container text-center">
+      <h1>Colaboradores</h1>
+      <h2>Mentores</h2>
+        <div class="row">
+          <div class="collaborator col-sm-4 text-center">
+            <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
+            <h4>Some Guy</h4>
+          </div>
+          <div class="col-sm-8">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div><!-- /row -->
+        <div class="row">
+          <div class="collaborator col-sm-4 text-center">
+            <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
+            <h4>Some Guy</h4>
+          </div>
+          <div class="col-sm-8">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div><!-- /row -->
+        <h2>Jueces</h2>
+          <div class="row">
+            <div class="collaborator col-sm-4 text-center">
+              <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
+              <h4>Some Guy</h4>
             </div>
-            
-            <div class="row">
-              <div class="collaborator col-sm-4">
-                <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
-                <h4>Some Guy</h4>
-              </div>
-              <div class="col-sm-8">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              </div>
+            <div class="col-sm-8">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
+          </div><!-- /row -->
+          <div class="row">
+            <div class="collaborator col-sm-4 text-center">
+              <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
+              <h4>Some Guy</h4>
+            </div>
+            <div class="col-sm-8">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /collaborators -->
+
+  <div id="organisers">
+    <div class="container text-center">
+        <div class="row">
+          <h1>Organizadores</h1>
+          <p>El Startup Education en Santo Domingo esta liderado por lideres voluntarios de la comunidad.</p>
+
+          <div class="organiser">
+            <img src="{% static 'img/organizers/leonardo.jpg' %}" class="img-circle">
+            <h4>Leonardo Jimenez</h4>
           </div>
 
-          <div class="jueces">
-            <h2>Jueces</h2>
-
-            <div class="row">
-              <div class="juez col-sm-4">
-                <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
-                <h4>Some Guy</h4>
-              </div>
-              <div class="col-sm-8">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              </div>
-            </div>
-            
-            <div class="row">
-              <div class="juez col-sm-4">
-                <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
-                <h4>Some Guy</h4>
-              </div>
-              <div class="col-sm-8">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              </div>
-            </div>
+          <div class="organiser">
+            <img src="{% static 'img/organizers/patricia.jpg' %}" class="img-circle">
+            <h4>Patricia Acosta</h4>
           </div>
 
-
-        </div>
-      </div>
-    </div>
-
-    <div class="organizadores">
-      <div class="container-fluid box">
-          <div class="text-center">
-            <h1>Organizadores</h1>
-            <p>El Startup Education en Santo Domingo esta liderado por lideres voluntarios de la comunidad.</p>
-
-            <div class="organizer">
-              <img src="{% static 'img/organizers/leonardo.png' %}" class="img-circle">
-              <h4>Leonardo Jimenez</h4>
-            </div>
-
-            <div class="organizer">
-              <img src="{% static 'img/organizers/patricia.png' %}" class="img-circle">
-              <h4>Patricia Acosta</h4>
-            </div>
-
-            <div class="organizer">
-              <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
-              <h4>Katihusca Rodriguez</h4>
-            </div>
-
-            <div class="organizer">
-              <img src="{% static 'img/organizers/alan.png' %}" class="img-circle">
-              <h4>Alan Fernandez</h4>
-            </div>
-
-            <div class="organizer">
-              <img src="{% static 'img/organizers/vivian.png' %}" class="img-circle">
-              <h4>Vivian Guillen</h4>
-            </div>
-
-            <div class="organizer">
-              <img src="{% static 'img/organizers/sovieski.png' %}" class="img-circle">
-              <h4>Sovieski Naut</h4>
-            </div>
-
-            <div class="organizer">
-              <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
-              <h4>Michelle Guzman</h4>
-            </div>
-
-            <div class="organizer">
-              <img src="{% static 'img/organizers/jorge.png' %}" class="img-circle">
-              <h4>Jorge Vargas</h4>
-            </div>
-
-            <div class="organizer">
-              <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
-              <h4>Luz Gonzalez</h4>
-            </div>
-
+          <div class="organiser">
+            <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
+            <h4>Katihusca Rodriguez</h4>
           </div>
-        </div>
-      </div>
-    </div>
+
+          <div class="organiser">
+            <img src="{% static 'img/organizers/alan.jpg' %}" class="img-circle">
+            <h4>Alan Fernandez</h4>
+          </div>
+
+          <div class="organiser">
+            <img src="{% static 'img/organizers/vivian.jpg' %}" class="img-circle">
+            <h4>Vivian Guillen</h4>
+          </div>
+
+          <div class="organiser">
+            <img src="{% static 'img/organizers/sovieski.jpg' %}" class="img-circle">
+            <h4>Sovieski Naut</h4>
+          </div>
+
+          <div class="organiser">
+            <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
+            <h4>Michelle Guzman</h4>
+          </div>
+
+          <div class="organiser">
+            <img src="{% static 'img/organizers/jorge.jpg' %}" class="img-circle">
+            <h4>Jorge Vargas</h4>
+          </div>
+
+          <div class="organiser">
+            <img src="{% static 'img/organizers/luz.jpg' %}" class="img-circle">
+            <h4>Luz Gonzalez</h4>
+          </div>
+
+          <div class="organiser">
+            <img src="{% static 'img/organizers/avatar.png' %}" class="img-circle">
+            <h4>Román Perez</h4>
+          </div>
+
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </div><!-- /organisers -->
 
     <div class="footer">
-      <div class="container-fluid box">
+      <div class="container">
         <div class="col-sm-4 text-center">
-          <h1 >Siguenos</h1>
+          <h1>Siguenos</h1>
           <i class="fa fa-facebook-square fa-4x fa-inverse social-icon"></i>
           <i class="fa fa-twitter-square fa-4x fa-inverse social-icon"></i>
           <i class="fa fa-envelope-square fa-4x fa-inverse social-icon"></i>
         </div>
       </div>
     </div>
+
 
     <!-- Le javascript
     ================================================== -->
@@ -353,6 +343,7 @@
 
     <!-- place project specific Javascript in this file -->
     <script src="{% static 'js/app.js' %}"></script>
+
 
     {% block extra_js %}{% endblock extra_js %}
   </body>
