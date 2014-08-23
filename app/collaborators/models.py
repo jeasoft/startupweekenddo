@@ -4,13 +4,13 @@ from django.db import models
 
 class Collaborators(models.Model):
     """All the colaboratos goes here without exception"""
-	full_name = models.CharField(max_length=40)
-	mini_bio = models.TextField()
-	image = models.ImageField(upload_to="img")
-	twitter = models.URLField()
-	linkedin = models.URLField()
-	email = models.EmailField()
-	category = models.CharField(max_length=40)
+    full_name = models.CharField(max_length=40)
+    mini_bio = models.TextField()
+    image = models.ImageField(upload_to="img")
+    twitter = models.URLField()
+    linkedin = models.URLField()
+    email = models.EmailField()
+    category = models.CharField(max_length=40)
 
 class Sponsors(models.Model):
     """This model provides a good base to handle the 
