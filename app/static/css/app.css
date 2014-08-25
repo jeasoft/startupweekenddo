@@ -50,6 +50,21 @@ p, a {
   z-index: 9999;
 }
 
+#home-navbar.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+#home-navbar > .navbar-inner {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+}
+
 /*Cover Section*/
 
 #cover {
