@@ -157,17 +157,21 @@ p, a {
 
 /*Home content*/
 
-#about {
-  padding: 5% 0%;
+
+#about {  
+  padding-bottom: 3%;
 }
 
-#about h1, 
-#about p  {
-	padding: 1%;
+#about h1 {
+  margin-bottom: 30px; 
 }
 
 #about .row {
-	padding: 3% 0%
+	padding: 5% 0%
+}
+
+#about h2 {
+  font-weight: bold;
 }
 
 #program {
@@ -177,6 +181,12 @@ p, a {
 
 #program h3 {
 	padding: 5px;
+}
+
+#collaborators {
+  background-color: #0e467d;
+  color: #fff;
+  padding: 5% 0%;
 }
 
 .collaborator img {
@@ -194,13 +204,17 @@ p, a {
 	padding: 3%;
 }
 
-#organisers{
+#organisers {
   padding: 5% 0%;
 }
 
 .organiser {
 	padding: 3%;
 	display: inline-block;
+}
+
+#organisers .row {
+  padding: 3% 0%;
 }
 
 .organiser img {
@@ -228,7 +242,7 @@ p, a {
   background-size: cover;
   color: #fff;
   height: 100%;
-  padding: 17% 0%;
+  padding: 20% 0%;
 }
 
 .section-sittingman {
@@ -256,16 +270,15 @@ p, a {
 
 }
 
-.section-board img {
-  width: 50%;
-  height: auto;
-}
-
 .credits {
   font-size: 0.8em;
   background-color: #000;
   color: #f9f9f9;
   padding: 10px 0px 5px 0px;
+}
+
+.credits a {
+  color: #FED208;
 }
 
 
