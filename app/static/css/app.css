@@ -10,6 +10,10 @@ h1 {
   font-weight: bold;
 }
 
+a {
+  color: #FED208;
+}
+
 /*Fonts*/
 
 h1, h2, h3, h4, h5, h6 {
@@ -183,6 +187,24 @@ p, a {
 	padding: 5px;
 }
 
+#facilitator {
+  background-color: #449d44;
+  color: #fff;
+  padding: 5% 0%;
+}
+
+
+#facilitator p {
+  display: table-cell;
+  vertical-align: middle;
+  height: 150px;
+}
+
+
+#facilitator .row {
+  padding: 3%;
+}
+
 #collaborators {
   background-color: #0e467d;
   color: #fff;
@@ -260,11 +282,6 @@ p, a {
   color: #f9f9f9;
   padding: 10px 0px 5px 0px;
 }
-
-.credits a {
-  color: #FED208;
-}
-
 
 
 /*Footer*/
