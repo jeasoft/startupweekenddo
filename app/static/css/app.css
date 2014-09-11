@@ -10,6 +10,10 @@ h1 {
   font-weight: bold;
 }
 
+a {
+  color: #FED208;
+}
+
 /*Fonts*/
 
 h1, h2, h3, h4, h5, h6 {
@@ -157,17 +161,21 @@ p, a {
 
 /*Home content*/
 
-#about {
-  padding: 5% 0%;
+
+#about {  
+  padding-bottom: 5%;
 }
 
-#about h1, 
-#about p  {
-	padding: 1%;
+#about h1 {
+  margin-bottom: 30px; 
 }
 
 #about .row {
-	padding: 3% 0%
+	padding: 5% 0%
+}
+
+#about h2 {
+  font-weight: bold;
 }
 
 #program {
@@ -177,6 +185,30 @@ p, a {
 
 #program h3 {
 	padding: 5px;
+}
+
+#facilitator {
+  background-color: #449d44;
+  color: #fff;
+  padding: 5% 0%;
+}
+
+
+#facilitator p {
+  display: table-cell;
+  vertical-align: middle;
+  height: 150px;
+}
+
+
+#facilitator .row {
+  padding: 3%;
+}
+
+#collaborators {
+  background-color: #0e467d;
+  color: #fff;
+  padding: 5% 0%;
 }
 
 .collaborator img {
@@ -194,7 +226,7 @@ p, a {
 	padding: 3%;
 }
 
-#organisers{
+#organisers {
   padding: 5% 0%;
 }
 
@@ -203,24 +235,12 @@ p, a {
 	display: inline-block;
 }
 
+#organisers .row {
+  padding: 3% 0%;
+}
+
 .organiser img {
 	height: 150px;
-}
-
-/*Footer*/
-
-.footer {
-	background-color: #1C2326;
-	padding: 50px;
-}
-
-.footer p, .footer h1 {
-	color:#fff;
-}
-
-.social-icon {
-	display: inline-block;
-	padding: 3%;
 }
 
 .section-redgirl {
@@ -228,7 +248,7 @@ p, a {
   background-size: cover;
   color: #fff;
   height: 100%;
-  padding: 17% 0%;
+  padding: 20% 0%;
 }
 
 .section-sittingman {
@@ -236,7 +256,7 @@ p, a {
   background-size: cover;
   color: #fff;
   height: 100%;
-  padding: 15% 0%;
+  padding: 20% 0%;
 
 }
 
@@ -252,13 +272,8 @@ p, a {
   background-size: cover;
   color: #fff;
   height: 100%;
-  padding: 12% 0%;
+  padding: 20% 0%;
 
-}
-
-.section-board img {
-  width: 50%;
-  height: auto;
 }
 
 .credits {
@@ -266,6 +281,23 @@ p, a {
   background-color: #000;
   color: #f9f9f9;
   padding: 10px 0px 5px 0px;
+}
+
+
+/*Footer*/
+
+.footer {
+	background-color: #1C2326;
+	padding: 50px;
+}
+
+.footer p, .footer h1 {
+	color:#fff;
+}
+
+.social-icon {
+	display: inline-block;
+	padding: 3%;
 }
 
 
