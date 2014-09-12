@@ -188,21 +188,9 @@ p, a {
 }
 
 #facilitator {
-  background-color: #449d44;
+  background-color: #229955;
   color: #fff;
   padding: 5% 0%;
-}
-
-
-#facilitator p {
-  display: table-cell;
-  vertical-align: middle;
-  height: 150px;
-}
-
-
-#facilitator .row {
-  padding: 3%;
 }
 
 #collaborators {
@@ -211,18 +199,28 @@ p, a {
   padding: 5% 0%;
 }
 
+#judges {
+  background-color: #1C2326;
+  color: #fff;
+  padding: 5% 0%;
+}
+
 .collaborator img {
 	height: 150px
 }
 
-#collaborators p {
+#collaborators p, 
+#facilitator p, 
+#judges p {
 	display: table-cell;
 	vertical-align: middle;
 	height: 150px;
 }
 
 
-#collaborators .row {
+#collaborators .row, 
+#facilitator .row,
+#judges .row {
 	padding: 3%;
 }
 
