@@ -9,7 +9,7 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
     <link href="{% static 'css/app.css' %}" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -26,18 +26,21 @@
       <div class="container">
         <div class="row">
             <div class="col-sm-12">
-              <img src="{% static 'img/logo.png' %}">
+              <img src="{% static 'img/wlogo.png' %}">
             </div>
             <div class="col-sm-12 text-center">
               <h1 id="big-tagline">Transforma la educación en 54 horas</h1>
               <p id="small-tagline">17, 18 y 19 de Octubre. Biblioteca Nacional.</p>
             </div>
+        </div>
+          <div class="row">
             <div class="col-sm-12 text-center ">
               <p>
                 <a href="http://www.eventbrite.com/e/startup-weekend-edu-santo-domingo-2014-tickets-12963136089" class="btn btn-xlarge btn-yellow">Regístrate</a>
                 <a class="btn btn-xlarge btn-learn" id="more-button">Más información</a>
               </p>
             </div>
+          </div>
         </div><!-- /cover -->
       </div><!-- /container -->
     </div><!-- /row -->
@@ -52,7 +55,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img src="{% static 'img/logo1.png' %}"></a>
+              <a class="navbar-brand" href="#"><img src="{% static 'img/logo.jpg' %}"></a>
             </div><!-- /navbar-header -->
             <div class="collapse navbar-collapse" role="menu">
               <ul class="nav navbar-nav navbar-right">
@@ -72,30 +75,13 @@
     <div id="about">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 text-center">
+          <div class="col-sm-8 text-center col-sm-offset-2">
           <h1>Anímate a hacer la diferencia</h1>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="700" height="400" src="//www.youtube.com/embed/2vgBkfn0jqs?rel=0hl=es cc_lang_pref=escc_load_policy=1" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
-          </div>
+            <div class="embed-responsive embed-responsive-16by9">
+             <iframe src="//www.youtube.com/embed/2vgBkfn0jqs?rel=0hl=es cc_lang_pref=escc_load_policy=1" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+            </div>   
           </div>
         </div>
-    <!--     <div class="row">
-          <div class="col-sm-4 text-center">
-            <i class="fa fa-microphone fa-5x"></i>
-            <h2>Viernes - Presenta</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-          <div class="col-sm-4 text-center">
-            <i class="fa fa-cogs fa-5x"></i>
-            <h2>Sabado - Construye</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-          <div class="col-sm-4 text-center">
-            <i class="fa fa-rocket fa-5x"></i>
-            <h2>Domingo - Despega</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-        </div> -->
       </div><!-- /container -->
     </div><!-- /about -->
 
@@ -427,6 +413,7 @@
         </div>
       </div>
     </div>
+
 
     <div class="credits">
       <div class="container">
