@@ -1,35 +1,19 @@
 /* Project specific Javascript goes here. */
 
 
-
 $(document).ready (function () {
 
 	// Cover Full Screen
 
-	$(window).resize(window_resize);
+    $( "#cover" ).each(function(){
+        var $this = $(this);
+        $this.css({'min-height':($(window).height())+'px'});
 
-	window_resize();
-
-	function window_resize() {
-		var height = $(window).height();
-
-		$('#cover').height( height );
-	}
-
-	// $(window).scroll(function (event){
-	// 	var top = $(window).scrollTop();
-	// 	var start = $("#cover").position().top + $("#cover").height(); 
-
-	// 	if (top > start) {
-	// 		$("#home-navbar").css({
-	// 			position: "fixed",
-	// 			top: 0,
-	// 			width: '100%'
-	// 		});
-	// 	} else {
-	// 		$("#home-navbar").css("position", "inherit");
-	// 	}
-	// });
+        /*Recalculate on window resize*/
+        $(window).resize(function(){
+            $this.css({'min-height':($(window).height())+'px'});
+        });
+    });
 
 	$("#more-button").click(function() {
 	    $('html, body').animate({
