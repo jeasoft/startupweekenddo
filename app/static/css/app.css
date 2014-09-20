@@ -167,7 +167,8 @@ p, a {
   padding-bottom: 5%;
 }
 
-#about h1 {
+#about h1, 
+#about h3 {
   margin-bottom: 30px; 
 }
 
