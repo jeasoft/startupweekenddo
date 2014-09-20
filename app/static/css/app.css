@@ -188,6 +188,24 @@ p, a {
 	padding: 5px;
 }
 
+#sponsors {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 5% 0%;
+}
+
+
+#sponsors li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+#sponsors li img {
+  width: 30%;
+  height: auto;
+}
+
 #facilitator {
   background-color: #229955;
   color: #fff;
