@@ -206,8 +206,18 @@ p, a {
   padding-right: 20px;
 }
 
-#sponsors li img {
-  width: 30%;
+#sponsors .gold li img {
+  width: 340px;
+  height: auto;
+}
+
+#sponsors .silver li img {
+  width: 250px;
+  height: auto;
+}
+
+#sponsors .bronze li img {
+  width: 200px;
   height: auto;
 }
 
