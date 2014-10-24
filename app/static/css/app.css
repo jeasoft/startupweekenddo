@@ -100,8 +100,7 @@ p, a {
   font-size: 1em;
   color: #0d1d42;
   font-weight: bold;
-  padding-top: 10%;
-
+  /*padding-top: 10%;*/
 }
 
 @media (min-width: 500px) { 
@@ -109,6 +108,19 @@ p, a {
   #big-tagline {
     font-size: 2.5em;
 
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 950px) {
+  #big-tagline {
+    margin-top: 15%;
+  }
+}
+
+
+@media only screen and (min-width: 950px) {
+  #big-tagline {
+    margin-top: 17%;
   }
 }
 
@@ -171,7 +183,7 @@ p, a {
 
 #about {
   background:url('../img/2_bckgrnd.png') no-repeat;
-  background-size: 100%;
+  background-size: cover;
   color: #fff;
   height: 580px;
 }
@@ -282,7 +294,8 @@ p, a {
 
 .section-redgirl {
   background:url('../img/4_bckgrnd.png') no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: 50% 0;
   color: #fff;
   height: 700px;
   padding: 20% 0%;
