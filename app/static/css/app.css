@@ -78,6 +78,40 @@ p, a {
   border: 0;
 }
 
+.navbar-header .social-links {
+  float: left;
+  margin: 5px 0 0 50px;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-header .social-links li {
+  float: left;
+  list-style: none;
+}
+
+.navbar-header .social-links li a {
+  display: block;
+  margin: 0 5px 0 0;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  background-image: url('../img/social-icons.png');
+}
+
+.navbar-header .social-links .facebook a {
+  background-position: -40px 0px;
+}
+
+.navbar-header .social-links .twitter a {
+  background-position: 0px 0px;
+}
+
+
+.navbar-header .social-links .twitter a {
+  background-position: 40px 0px;
+}
+
 /*Cover Section*/
 
 #cover {
