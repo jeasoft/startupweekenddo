@@ -185,20 +185,25 @@ p, a {
   color: #fff; 
   background-color: #49bab7; 
 } 
+
+.btn-subscribe{
+  color: #fff; 
+  background-color: #0d1d42; 
+}
  
-.btn-yellow:hover, 
-.btn-yellow:focus, 
-.btn-yellow:active, 
-.btn-yellow.active, 
-.open .dropdown-toggle.btn-yellow { 
-  color: #000; 
-  background-color: #E0BD0B; 
+.btn-subscribe:hover, 
+.btn-subscribe:focus, 
+.btn-subscribe:active, 
+.btn-subscribe.active, 
+.open .dropdown-toggle.btn-subscribe { 
+  color: #fff; 
+  background-color: #49bab7; 
   display: inline-block;
 } 
 
 .btn-learn { 
   color: #FFFFFF; 
-  background-color: #000000; 
+  background-color: #0d1d42; 
 
 } 
 
