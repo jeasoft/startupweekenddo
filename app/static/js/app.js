@@ -3,18 +3,6 @@
 
 $(document).ready (function () {
 
-	// Cover Full Screen
-
-    $( "#cover" ).each(function(){
-        var $this = $(this);
-        $this.css({'min-height':($(window).height())+'px'});
-
-        /*Recalculate on window resize*/
-        $(window).resize(function(){
-            $this.css({'min-height':($(window).height())+'px'});
-        });
-    });
-
     // Scroll Down Buttons
 
 	$("#more-button").click(function() {

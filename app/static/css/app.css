@@ -82,7 +82,9 @@ p, a {
 
 #cover {
 	background:url('../img/1_cover.png') no-repeat;
-	background-size: 100%;
+	background-size: 100% auto;
+        color: #fff;
+        height: 100%;
 }
 
 #cover img {
@@ -188,9 +190,10 @@ p, a {
 
 #about {
   background:url('../img/2_bckgrnd.png') no-repeat;
-  background-size: cover;
+  background-position: center;
+  background-size: 100% auto;
   color: #fff;
-  height: 750px;
+  max-height: 749px;
 }
 
 #about h1, 
@@ -297,22 +300,13 @@ p, a {
 	height: 150px;
 }
 
-.section-redgirl {
+#since2008 {
   background:url('../img/4_bckgrnd.png') no-repeat;
-  background-size: cover;
-  background-position: 50% 0;
+  background-size: 100% auto;
+  background-position: center;
   color: #fff;
-  height: 870px;
-  padding: 20% 0%;
-}
-
-.section-sittingman {
-  background:url('../img/sittingman.jpg') no-repeat;
-  background-size: cover;
-  color: #fff;
-  height: 100%;
-  padding: 20% 0%;
-
+  max-height: 749px;
+  height: 749px;
 }
 
 .box {
@@ -320,15 +314,6 @@ p, a {
   opacity: 0.8;
   height: 100%;
   padding: 5%;
-}
-
-.section-board {
-  background:url('../img/board.jpg') no-repeat;
-  background-size: cover;
-  color: #fff;
-  height: 100%;
-  padding: 20% 0%;
-
 }
 
 .credits {
