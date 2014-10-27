@@ -47,6 +47,13 @@ $(document).ready (function () {
             }, 1000);
         });
 
+    $("#mentores").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#coaches").offset().top
+            }, 1000);
+        });
+
+
     // Navbar affix
 
 	$('#nav-wrapper').height($("#home-navbar").height());
