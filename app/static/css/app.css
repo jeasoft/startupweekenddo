@@ -278,8 +278,10 @@ p, a {
 #collaborators p, 
 #facilitator p, 
 #judges p {
+  /*
 	display: table-cell;
 	vertical-align: middle;
+  */
 	height: 150px;
 }
 
