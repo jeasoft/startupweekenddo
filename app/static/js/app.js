@@ -42,5 +42,20 @@ $(document).ready (function () {
     $('#home-navbar').affix({
         offset: { top: $('#home-navbar').offset().top }
     });
+    
+    //vertical hack:
+    verticalAlignHack('#coaches .row .col-sm-8, #coaches .row .col-sm-4');
+    
+    function verticalAlignHack( elements ) {
+        $( elements ).each(function() {
+            var ph = $(this).parent().height();
+            var h = $(this).height();
+            
+            $(this).css({
+                position: 'relative',
+                top: ph / 2 - h / 2
+            });
+        });
+    }
 
 });
