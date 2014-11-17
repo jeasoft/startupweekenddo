@@ -98,7 +98,7 @@ p, a {
 	}
 }
 
-#big-tagline {
+.big-tagline {
   font-size: 1em;
   color: #0d1d42;
   font-weight: bold;
@@ -107,33 +107,37 @@ p, a {
 
 @media (min-width: 500px) { 
 
-  #big-tagline {
+  .big-tagline {
     font-size: 2.5em;
 
   }
 }
 
 @media only screen and (min-width: 750px) and (max-width: 950px) {
-  #big-tagline {
+  .big-tagline {
     margin-top: 15%;
   }
 }
 
 
 @media only screen and (min-width: 950px) {
-  #big-tagline {
+  .big-tagline {
     margin-top: 17%;
   }
 }
 
-#small-tagline {
+.small-tagline {
   font-size: 1em;
   color: #ec1c24;
 }
 
+#cover h4 {
+	color: #ec1c24;
+}
+
 @media (min-width: 500px) { 
 
-  #small-tagline{
+  .small-tagline{
     font-size: 2em;
     padding: 0px;
   }
