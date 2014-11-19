@@ -275,6 +275,7 @@ p, a {
   padding: 5% 0%;
 }
 
+
 .collaborator img {
 	height: 150px
 }
@@ -315,6 +316,20 @@ p, a {
 
 .organiser img {
 	height: 150px;
+}
+
+#teams img {
+  height: 150px;
+}
+
+.team-member img {
+  height: 180px;
+  width: 200px;
+}
+
+.team-member p {
+  height: 35px;
+  width: 200px;
 }
 
 #since2008 {
@@ -371,13 +386,77 @@ caption {
 }
 
 
+/* Added By Jearel Alcantara
+  CSS for Teams
+*/
 
+.team-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
 
+.team-modal .modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 3em;
+}
 
+.team-modal .modal-content p {
+    margin-bottom: 30px;
+}
 
+.team-modal .modal-content p.item-intro {
+    margin: 20px 0 30px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
 
+.team-modal .modal-content ul.list-inline {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
 
+.team-modal .modal-content img {
+    margin-bottom: 30px;
+}
 
+.team-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
 
+.team-modal .close-modal:hover {
+    opacity: .3;
+}
 
+.team-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #222;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 
+.team-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #222;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}

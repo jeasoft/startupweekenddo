@@ -35,6 +35,12 @@ $(document).ready (function () {
             }, 1000);
         });
 
+    $("#equipos").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#teams").offset().top
+            }, 1000);
+        });
+
     // Navbar affix
 
 	$('#nav-wrapper').height($("#home-navbar").height());
