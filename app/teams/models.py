@@ -10,12 +10,15 @@ from django.template import defaultfilters
 class Category(models.Model):
     """Category for the Enterpreneaur"""
 
+    class Meta:
+        verbose_name_plural =  "categories"
+
     name = models.CharField(max_length=50)
     slug = models.SlugField(max_length=50, unique=True)
 
     def save(self, *args, **kwargs):
         self.slug = defaultfilters.slugify(self.name)
-        super(Team, self).save(*args, **kwargs)
+        super(Category, self).save(*args, **kwargs)
 
     def __str__(self):
         return self.name
@@ -28,7 +31,7 @@ class Enterpreneaur(models.Model):
 
     full_name = models.CharField(max_length=250)
     category = models.ForeignKey(Category)
-    photo = models.ImageField(upload_to="img/photos", blank=True, null=True)
+    photo = models.ImageField(upload_to="img/enterpreneaurs/photo", blank=True, null=True)
     mini_bio = models.TextField()
     facebook = models.URLField(blank=True, null=True)
     twitter = models.URLField(blank=True, null=True)

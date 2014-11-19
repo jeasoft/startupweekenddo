@@ -5,4 +5,4 @@ from .models import Team
 class TeamList(ListView):
 	model = Team
 	context_object_name = 'team_list'
-	#template_name = 'index.html'
+	template_name = 'index.html'
