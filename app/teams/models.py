@@ -26,25 +26,6 @@ class Category(models.Model):
 
 
 @python_2_unicode_compatible
-class Enterpreneaur(models.Model):
-    """ Model for the Enterpreneaurs """
-
-    full_name = models.CharField(max_length=250)
-    category = models.ForeignKey(Category)
-    photo = models.ImageField(upload_to="img/enterpreneaurs/photo", blank=True, null=True)
-    mini_bio = models.TextField()
-    facebook = models.URLField(blank=True, null=True)
-    twitter = models.URLField(blank=True, null=True)
-    linkedin = models.URLField(blank=True, null=True)
-    gplus = models.URLField(blank=True, null=True)
-    email = models.EmailField(blank=True, null=True)
-    created = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.full_name
-
-
-@python_2_unicode_compatible
 class Team(models.Model):
     """Model for the Team """
 
@@ -60,7 +41,6 @@ class Team(models.Model):
     logo = models.ImageField(upload_to="img/logos", blank=True, null=True)
     slogan = models.CharField(max_length=140)
     description = models.TextField()
-    members = models.ManyToManyField(Enterpreneaur, related_name="members")
     place = models.PositiveSmallIntegerField(choices = TEAM_PLACE_CHOICES, default=0 )
     created = models.DateTimeField(auto_now_add=True)
 
@@ -71,3 +51,24 @@ class Team(models.Model):
 
     def __str__(self):
         return self.name 
+
+
+@python_2_unicode_compatible
+class Enterpreneaur(models.Model):
+    """ Model for the Enterpreneaurs """
+
+    full_name = models.CharField(max_length=250)
+    category = models.ForeignKey(Category)
+    photo = models.ImageField(upload_to="img/enterpreneaurs/photo", blank=True, null=True)
+    mini_bio = models.TextField()
+    team = models.ForeignKey(Team)
+    facebook = models.URLField(blank=True, null=True)
+    twitter = models.URLField(blank=True, null=True)
+    linkedin = models.URLField(blank=True, null=True)
+    gplus = models.URLField(blank=True, null=True)
+    email = models.EmailField(blank=True, null=True)
+    created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.full_name
+
