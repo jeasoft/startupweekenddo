@@ -122,7 +122,7 @@ p, a {
 
 @media only screen and (min-width: 950px) {
   .big-tagline {
-    margin-top: 17%;
+    margin-top: 20%;
   }
 }
 
@@ -133,6 +133,7 @@ p, a {
 
 #cover h4 {
 	color: #ec1c24;
+	font-size: 1em;
 }
 
 @media (min-width: 500px) { 
@@ -236,7 +237,7 @@ p, a {
 }
 
 #sponsors .gold li img {
-  width: 340px;
+  width: 250px;
   height: auto;
 }
 
