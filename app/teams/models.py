@@ -39,6 +39,7 @@ class Team(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)
     logo = models.ImageField(upload_to="img/logos", blank=True, null=True)
+    team_photo = models.ImageField(upload_to="img/team/photo", blank=True, null=True)
     slogan = models.CharField(max_length=140)
     description = models.TextField()
     place = models.PositiveSmallIntegerField(choices = TEAM_PLACE_CHOICES, default=0 )

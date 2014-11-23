@@ -841,22 +841,29 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
+                            <img class="img-responsive" src="{{ MEDIA_URL }}/{{ team.logo }}" alt="">
                             <h2>{{ team.name }}</h2>
                             <p class="item-intro text-muted">{{ team.slogan }}</p>
-                            <img class="img-responsive" src="{{ MEDIA_URL }}/{{ team.logo }}" alt="">
                             <p>{{ team.description }}</p>
+                            <img src="{{ MEDIA_URL }}/{{ team.team_photo }}" class="img-responsive" alt="">
 
                             <!-- Team Members-->
                             <div class="row">
-                            {% for member in team.enterpreneaur_set.all %}
-                                <div class="col-sm-4">
-                                    <div class="team-member">
-                                        {% if member.photo %}
-                                        <img src="{{ MEDIA_URL }}/{{ member.photo }}" class="img-responsive img-circle" alt="">
-                                        {% else %}
-                                        <img src="{% static 'img/organizers/avatar.png' %}" class="img-responsive img-circle" alt="">
-                                        {% endif %}
-                                        <h4>{{ member.full_name }}</h4>
+                                 <table class="table table-hover table-responsive">
+                                  <thead>
+                                    <tr>
+                                      <th>Nombre</th>
+                                      <th>Categoria</th>
+                                      <th>Redes Sociales</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+
+                                    {% for member in team.enterpreneaur_set.all %}                              
+                                    <tr>
+                                      <td><i class="fa fa-user"></i> {{ member.full_name }}</td>
+                                      <td>{{ member.category }}</td>
+                                      <td>
                                         <ul class="list-inline social-buttons">
                                         {% if member.twitter %}
                                             <li><a href="{{ member.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -870,11 +877,12 @@
                                             <li><a href="{{ member.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                                         {% endif %}
                                         </ul>
-                                        <p class="text-muted">{{ member.mini_bio }}</p>
-                                        <button type="button" class="btn btn-success">{{ member.category }}</button>
-                                    </div>
-                                </div>
-                            {% endfor %}
+                                      </td>
+                                    </tr>
+                                  {% endfor %}
+                                  </tbody>
+                                </table>
+                                
                             </div>
 
                         </div>
