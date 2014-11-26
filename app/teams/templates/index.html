@@ -807,14 +807,20 @@
               <p> Estos son los equipos formados, justo a sus miembros</p>
 
                 {% for team in team_list %}
-                <div class="col-md-4 col-sm-6 team-item">
+                <div class="col-md-4 col-sm-8 team-item">
                     <a href="#teamModal{{ team.id }}" class="team-link" data-toggle="modal">
+                        {% if team.logo %}
                         <img src="{{ team.logo.url }}" class="img-responsive" alt="">
+                        {% else %}
+    
+                        <div class="team-caption">
+                            <h4>{{ team.name }} </h4>
+                        </div>
+
+                        {% endif %}
+                        <button type="button" class="btn btn-success">Ver</button>
                     </a>
-                    <div class="team-caption">
-                        <h4>{{ team.name }} </h4>
-                        <p class="text-muted">{{ team.slogan }}</p>
-                    </div>
+
                 </div>
                 {% endfor %}
               {% else %}
@@ -841,11 +847,11 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <img class="img-responsive" src="{{ MEDIA_URL }}/{{ team.logo }}" alt="">
-                            <h2>{{ team.name }}</h2>
-                            <p class="item-intro text-muted">{{ team.slogan }}</p>
-                            <p>{{ team.description }}</p>
+                            {% if team.team_photo %}
                             <img src="{{ MEDIA_URL }}/{{ team.team_photo }}" class="img-responsive" alt="">
+                            {% endif %}
+                            <h3>{{ team.name }}</h3>
+                            <br/>
 
                             <!-- Team Members-->
                             <div class="row">
@@ -924,6 +930,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
 
     <!-- place project specific Javascript in this file -->
